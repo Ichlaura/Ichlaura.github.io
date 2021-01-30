@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Template-Laura</title>
+  <meta charset="UTF-8">
+<link href="css/Style.css" rel="Stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Week 4: Add Two Numbers</h1>
+        <h2>Laura Nuñez</h2>
+    </header>
+    <main>
+        <h3>Add Two Numbers</h3>
+        <label>Enter Number One: <input type="text" id="number1"></label>
+      <label>Enter Number Two: <input type="text" id="number2"></label>
+        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2019 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+
+        function addNumbers() {
+            function addNumbers() {
+            // Input
+            let a = parseFloat(document.getElementById("number1").value); 
+            let b = parseFloat(document.getElementById("number2").value); 
+            // Here is the process for sum a + b
+            let sum = a + b; 
+            // Output  
+            document.getElementById("output").innerHTML =
+                "The sum of " + a + " and " + b + " equals " + sum + "!"; 
+        }
+        }
+    </script>
+</body>
+</html> 
