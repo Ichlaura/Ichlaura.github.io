@@ -1,11 +1,19 @@
+/* Input: an amount in Pounds
+ * Processing: convert the amount from Pounds to Kilograms by using kg = lb * 0.453592
+ * Output: the amount converted to Kilograms
+*/
 function poundsToKilograms() {
-    //INPUT - user enters pounds into text field
-    let pounds = parseFloat(document.getElementById('pounds').value)
-    //PROCESSING - k = p * 0.45359237
-    let kilograms = pounds * 0.45359237;
+    // Input
+    let pounds = parseFloat(document.getElementById('pounds').value);
+    
+    // Convert the pounds to kilograms.
+    let kilograms = pounds * 0.453592;
+    
+    //Round to the kilograms to one digits after the decimal.
     let digits = 1;
     let multiplier = Math.pow(10, digits);
     kilograms = Math.round(kilograms * multiplier) / multiplier;
-    //OUTPUT - kilograms appears below the text field
-    document.getElementById('output').innerHTML = `${kilograms} kg`;
-}
+    
+    // Display the kilograms amount to the user.
+    document.getElementById('output').innerHTML = kilograms.toFixed(1) + ' Kilograms';
+    }
