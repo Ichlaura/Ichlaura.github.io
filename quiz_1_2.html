@@ -8,18 +8,63 @@
 <body>
     <header>
         
-        <h2>Laura Nuñez</h2>
+        <h2>Laura Nuñez
+
+
+            <!doctype html>
+            <html lang="en-us">
+            <head>
+              <title>Template-Laura</title>
+              <meta charset="UTF-8">
+            
+            </head>
+            <body>
+                <header>
+                    
+                    <h2>Laura Nuñez</h2>
+                </header>
+                <main>
+                  
+                    <label>Enter r: <input type="text" id="number1"></label>
+                  <label>Enter h: <input type="text" id="number2"></label>
+                    <label><button onclick="addNumbers()">Volume</button></label>
+                    <hr>
+                    <p><span id="output"></span></p>
+                </main>
+                <footer>
+                    &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+                </footer>
+                <script>
+            
+               
+            function addNumbers() {
+                //INPUT
+                 let r = parseFloat(document.getElementById('number1').value);
+                 let h = parseFloat(document.getElementById('number2').value);
+                //PROCESSING
+                 let sum = r*r*h*3.1416;
+                //OUTPUT
+                 document.getElementById('output').innerHTML = + sum ;
+            }
+                </script>
+            
+            <header>
+                    
+                <h2> </h2>
+            </header>
+            </body>
+            </html> </h2>
     </header>
     <main>
       
         <label>Enter r: <input type="text" id="number1"></label>
       <label>Enter h: <input type="text" id="number2"></label>
-        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <label><button onclick="addNumbers()">Volume</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
     <footer>
-        &copy;2019 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
 
@@ -34,5 +79,13 @@ function addNumbers() {
 	 document.getElementById('output').innerHTML = + sum ;
 }
     </script>
+
+<header>
+        
+    <h2> 
+
+
+    </h2>
+</header>
 </body>
 </html>
