@@ -28,10 +28,16 @@ function hours() {
 	//INPUT
 	 let x = parseFloat(document.getElementById('number1').value);
 	 let y = parseFloat(document.getElementById('number2').value);
-	//PROCESSING
-	 let sum = ((15*x)+(22.50*y))-((15(15*x)+(22.50*y))/100);
+    //PROCESSING
+    let a = 15*x;
+    let b = 22.50 * y;
+let c = a + b ;
+let d = c * 15;
+let e = d/100;
+
+	 let total = c - e;
 	//OUTPUT
-	 document.getElementById('output').innerHTML = + sum ;
+	 document.getElementById('output').innerHTML = + total ;
 }
     </script>
 </body>
