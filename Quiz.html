@@ -16,8 +16,7 @@
       <label><button onclick="hours()">total</button></label>
       <hr />
       <p><span id="output"></span></p>
-      <hr />
-      <p><span id="output"></span></p>
+     
     </main>
 
     <footer>
@@ -35,6 +34,7 @@
           let tax= ((regularhours*15) + (22.50* extrahours)*(15))/100;
           let total= hours - tax;
           document.getElementById("output").textContent=  `${total.toFixed (1)}` ;  //output
+          document.getElementById("output").textContent=  ((regularhours*15) + (22.50* extrahours))-(((regularhours*15) + (22.50* extrahours)*(15))/100);  //output
         }
      
     </script>
