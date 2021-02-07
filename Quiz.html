@@ -6,22 +6,26 @@
   </head>
   <body>
     <header>
-      <h1>Week 5: Lb to Kg</h1>
+    
       <h2>Laura Nuñez</h2>
     </header>
     <main>
-      <h3>Convert Pounds to Kilograms</h3>
-      <label>Enter regular hours: <input type="text" id="pounds" /></label>
-      <label><button onclick="regularandtaxhours()">total</button></label>
-      <label>Enter extra hours: <input type="text" id="pounds" /></label>
+
+      <label>Enter regular hours: <input type="text" id="regularhours" /></label>
+      <label>Enter extra hours: <input type="text" id="extrahours" /></label>
+      <label><button onclick="hours()">total</button></label>
       <hr />
       <p><span id="output"></span></p>
-      <label>Enter extra hours: <input type="text" id="pounds" /></label>
+      <hr />
+      <p><span id="output"></span></p>
     </main>
+
     <footer>
       &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
     </footer>
+
     <script>
+
         function hours() {
           let text = document.getElementById("pounds").value; //Input
          
