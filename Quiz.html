@@ -1,41 +1,38 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>Employee´s after tax pay</title>
-  </head>
-  <body>
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Template-Laura</title>
+  <meta charset="UTF-8">
+<link href="css/Style.css" rel="Stylesheet" />
+</head>
+<body>
     <header>
-    
-      <h2>Laura Nuñez</h2>
+       
+        <h2>Laura Nuñez</h2>
     </header>
     <main>
-
-      <label>Enter regular hours: <input type="text" id="regularhours" /></label>
-      <label>Enter extra hours: <input type="text" id="extrahours" /></label>
-      <label><button onclick="hours()">total</button></label>
-      <hr />
-      <p><span id="output"></span></p>
-     
+      
+        <label>Enter regular hours: <input type="text" id="number1"></label>
+      <label>Enter extra hours: <input type="text" id="number2"></label>
+        <label><button onclick="addNumbers()">total</button></label>
+        <hr>
+        <p><span id="output"></span></p>
     </main>
-
     <footer>
-      &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
     </footer>
-
     <script>
 
-        function hours() {
-          //let text = document.getElementById("regularhours").value; 
-          //let text = document.getElementById("extrahours").value;//Input
-          let regularhours = parseFloat (text) 
-          let extrahours = parseFloat (text) // Processing
-          let hours= (regularhours*15) + (22.50* extrahours); 
-          let tax= ((regularhours*15) + (22.50* extrahours)*(15))/100;
-          let total= hours - tax;
-          document.getElementById("output").textContent=  + total;  //output
-        }
-     
+   
+function hours() {
+	//INPUT
+	 let x = parseFloat(document.getElementById('number1').value);
+	 let y = parseFloat(document.getElementById('number2').value);
+	//PROCESSING
+	 let sum = ((15*x)+(22.50*y))-((15(15*x)+(22.50*y))/100);
+	//OUTPUT
+	 document.getElementById('output').innerHTML = + sum ;
+}
     </script>
-  </body>
-</html>
+</body>
+</html> 
