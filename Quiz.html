@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Employee´s after tax pay</title>
+  </head>
+  <body>
+    <header>
+      <h1>Week 5: Lb to Kg</h1>
+      <h2>Laura Nuñez</h2>
+    </header>
+    <main>
+      <h3>Convert Pounds to Kilograms</h3>
+      <label>Enter regular hours: <input type="text" id="pounds" /></label>
+      <label><button onclick="regularandtaxhours()">total</button></label>
+      <label>Enter extra hours: <input type="text" id="pounds" /></label>
+      <hr />
+      <p><span id="output"></span></p>
+      <label>Enter extra hours: <input type="text" id="pounds" /></label>
+    </main>
+    <footer>
+      &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function hours() {
+          let text = document.getElementById("pounds").value; //Input
+         
+          let regularhours = parseFloat (text) 
+          let extrahours = parseFloat (text) // Processing
+          let hours= (regularhours*15) + (22.50* extrahours); 
+          let tax= ((regularhours*15) + (22.50* extrahours)*(15))/100;
+          let total= hours - tax;
+          document.getElementById("output").textContent=  `${total.toFixed (1)}` ;  //output
+        }
+     
+    </script>
+  </body>
+</html>
