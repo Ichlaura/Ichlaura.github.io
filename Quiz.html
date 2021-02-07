@@ -33,7 +33,6 @@
           let hours= (regularhours*15) + (22.50* extrahours); 
           let tax= ((regularhours*15) + (22.50* extrahours)*(15))/100;
           let total= hours - tax;
-          document.getElementById("output").textContent=  `${total.toFixed (1)}` ;  //output
           document.getElementById("output").textContent=  ((regularhours*15) + (22.50* extrahours))-(((regularhours*15) + (22.50* extrahours)*(15))/100);  //output
         }
      
