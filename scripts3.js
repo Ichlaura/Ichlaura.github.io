@@ -3,15 +3,15 @@ function footWear()
 			var answer = document.getElementById("weather").value;
 			var message;
 			
-			if (answer == 'hot' || answer =='Hot')
+			if (answer == 'hot' )
 			{
 				message = "sandals";
 			}
-			else if (answer == 'rain' || answer == 'Rain')
+			else if (answer == 'rain' )
 			{
 				message = "galoshes";
 			}
-			else if ( answer == 'snow'|| answer == 'Snow')
+			else if ( answer == 'snow')
 			{
 				message = "boots";
 			}		
