@@ -25,10 +25,10 @@ function quiz()
             
             let message;
             if (answer == solution) {
-            message = 'Correct! Good job'
+            message = 'Correct! 🏆 '
             }
             else {
-            message = 'Incorrect! Try again '
+            message = 'Incorrect 😢'
             }
             
             document.getElementById('output').innerHTML = message;
