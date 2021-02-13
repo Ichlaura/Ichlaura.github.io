@@ -1,5 +1,5 @@
 function footwear(){
-    
+
     let footwear
     let weather = document.getElementById("weather").value
      
@@ -13,5 +13,5 @@ function footwear(){
             footwear = "Shoes";
         }
 
-        document.getElementById('output').innerHTML = footwear
+        document.getElementById('output').innerHTML = footwear;
     }
