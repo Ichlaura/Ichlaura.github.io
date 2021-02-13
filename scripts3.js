@@ -1,24 +1,37 @@
-function footWear()
+function quiz()
 		{
-			var answer = document.getElementById("weather").value;
-			var message;
-			
-			if (answer == 'hot' || answer =='Hot')
-			{
-				message = "sandals";
-			}
-			else if (answer == 'rain' || answer == 'Rain')
-			{
-				message = "galoshes";
-			}
-			else if ( answer == 'snow'|| answer == 'Snow')
-			{
-				message = "boots";
-			}		
-			else 
-			{
-				message = "shoes";
-			}
+			let a = parseFloat(document.getElementById('one').value);
+			let b = parseFloat(document.getElementById('two').value);
+			let c = document.getElementById('arithmetic').value;
+			let answer = parseFloat(document.getElementById('answer').value);
 
-			document.getElementById("output").innerHTML = message;
-		}
+			
+            let solution;
+            switch (c) {
+            case '+':
+            solution = a+ b;
+            break;
+            case '-':
+            solution = a - b;
+            break;
+            case '*':
+            solution= a * b;
+            break;
+            case '/':
+            solution = a / b;
+            break;
+            }
+            
+            
+            let message;
+            if (answer == solution) {
+            message = 'Correct! 🏆 '
+            }
+            else {
+            message = 'Incorrect 😢'
+            }
+            
+            document.getElementById('output').innerHTML = message;
+            
+            }
+          
