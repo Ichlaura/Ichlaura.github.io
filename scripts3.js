@@ -3,25 +3,20 @@ function footwear()
 			let a = parseFloat(document.getElementById('a').value);
 			
 			
-            let b;
-            switch (weather) {
-            case (a==hot):
-            b = 'sandals';
-            break;
-            case (a== rain):
-            b = 'galoshes';
-            break;
-            case (a==snow):
-            b = 'boots';
-            break;
-            case (a==unknown):
-           b = 'shoes';
-            break;
+            if (a == "hot") {
+                footwear = "sandals";
+            } else if (a == "rain") {
+                footwear = "galoshes";
+            } else if (a == "snow") { 
+                footwear = "Boots";
+            } else {
+                footwear = "Shoes";
             }
+    
+            document.getElementById('output').innerHTML = footwear;
+        }
             
 
             
-            document.getElementById('output').innerHTML = b;
             
-            }
-          
+            
