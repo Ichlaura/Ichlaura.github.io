@@ -10,7 +10,7 @@ function footwear()
             } else if (a == "snow") { 
                 footwear = "Boots";
             } else {
-                footwear = "Shoes";
+                footwear = "try again";
             }
     
             document.getElementById('output').innerHTML = footwear;
