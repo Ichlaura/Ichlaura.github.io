@@ -42,6 +42,6 @@ function arithmetic()
 			else {
 				message = "Error";
 			}
-			document.getElementById("solution").innerHTML = message;
+			document.getElementById("final").innerHTML = message;
 		}
 		
