@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <title>weather</title>
-        <link href="/css/Styles.css" rel="Stylesheet" />
-        <link href="css/Style.css" rel="Stylesheet" />
-      </head>
+<html lang="en">
 <head>
-	<title> W06 weather</title>
+	<title>W06.09 Two programs with if statements</title>
 	<meta charset="UTF-8">
 </head>
 <body>
-    <header>
-        <h1>Week 6: weather</h1>
-        <h2>Laura Nuñez</h2>
-      </header>
-      <main>
-        <h3>choose weather</h3>
-        <hr />
-       
+	Please type weather type: <input type="text" id="weather">
+	<button type="button" onclick="footWear()">Foot Wear</button><br>
+    Foot Wear: <div id="solution"></div>
+	<script>
+		function footWear()
+		{
+			var answer = document.getElementById("weather").value;
+			var message;
+			
+			if (answer == 'hot' || answer =='Hot')
+			{
+				message = "sandals";
+			}
+			else if (answer == 'rain' || answer == 'Rain')
+			{
+				message = "galoshes";
+			}
+			else if ( answer == 'snow'|| answer == 'Snow')
+			{
+				message = "boots";
+			}		
+			else 
+			{
+				message = "shoes";
+			}
 
-    
-        <label>what is your weather?: 
-            <select id='weather'>
-                <option value="">--Please choose an option--</option>
-                <option value='hot'>HOT</option>
-                <option value='rain'>RAIN</option>
-                <option value='snow'>SNOW</option>
-                <option value='unknown'>UNKNOWN</option>
-                </select>
-                
-                <label><button onclick="footwear()">SELECT</button></label>
-                <hr>
-                <p><span id="output"></span></p>
-
-</main>
-    <footer>
-        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
-      </footer>
-
-    
-
-<hr />
-     
-	<script   src= "scripts3.js" >
-
-		
+			document.getElementById("solution").innerHTML = message;
+		}
 	</script>
-
-
 </body>
 </html>
