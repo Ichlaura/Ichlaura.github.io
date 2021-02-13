@@ -2,7 +2,7 @@ function arithmetic()
 		{
 			var one = parseFloat(document.getElementById('one').value);
 			var two = parseFloat(document.getElementById('two').value);
-			var a = document.getElementById('arithmetic').value;
+			var a = document.getElementById('thre').value;
 			var solution = parseFloat(document.getElementById('solution').value);
 
 			var arithmetic;
