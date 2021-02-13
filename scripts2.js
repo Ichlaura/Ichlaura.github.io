@@ -1,46 +1,37 @@
 function quiz()
 		{
-			var a = parseFloat(document.getElementById('one').value);
-			var b = parseFloat(document.getElementById('two').value);
-			var c = document.getElementById('arithmetic').value;
-			var answer = parseFloat(document.getElementById('answer').value);
+			let a = parseFloat(document.getElementById('one').value);
+			let b = parseFloat(document.getElementById('two').value);
+			let c = document.getElementById('arithmetic').value;
+			let answer = parseFloat(document.getElementById('answer').value);
 
-			var arithmetic;
-			var message;
-			if(c == "+"){
-				arithmetic= a + b;
-				if ( answer == arithmetic){
-					message = "Correct! ";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else if (c == "-"){
-				arithmetic= a - b;
-				if ( answer == arithmetic){
-					message = "Correct! ";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else if (c == "*"){
-				arithmetic = a * b;
-				if ( answer == arithmetic){
-					message = "Correct! ";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else if (c == "/"){
-				arithmetic = a / b;
-				if ( answer == arithmetic){
-					message = "Correct! ";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else {
-				message = "ERROR";
-			}
-			document.getElementById("final").innerHTML = message;
-		}
+			
+            let solution;
+            switch (c) {
+            case '+':
+            solution = a+ b;
+            break;
+            case '-':
+            solution = a - b;
+            break;
+            case '*':
+            solution= a * b;
+            break;
+            case '/':
+            solution = a / b;
+            break;
+            }
+            
+            
+            let message;
+            if (answer == solution) {
+            message = 'Correct! Good job'
+            }
+            else {
+            message = 'Incorrect! Try again '
+            }
+            
+            document.getElementById('output').innerHTML = message;
+            
+            }
+          
