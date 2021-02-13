@@ -5,7 +5,14 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	Please type weather type: <input type="text" id="weather">
+
+    <select name="choice" id="weather">
+        <option value="hot">Hot</option>
+        <option value="rain" >Rain</option>
+        <option value="snow">Snow</option>
+        <option value = "unknown" selected>Unknown</option>
+        </select>
+
 	<button type="button" onclick="footWear()">Foot Wear</button><br>
     Foot Wear: <div id="solution"></div>
 	<script>
