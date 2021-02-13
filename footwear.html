@@ -2,54 +2,73 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
-        <title>weather</title>
+        <title>Quiz</title>
         <link href="/css/Styles.css" rel="Stylesheet" />
         <link href="css/Style.css" rel="Stylesheet" />
       </head>
 <head>
-	<title> W06 The day's weather</title>
+	<title> W06 Quiz on basic arithmetic</title>
 	<meta charset="UTF-8">
 </head>
 <body>
     <header>
-        <h1>Week 6: correct footwear</h1>
+        <h1>Week 6: QUIZ arithmetic</h1>
         <h2>Laura Nuñez</h2>
       </header>
       <main>
-        <h3> Choose the weather</h3>
+        <h3>QUIZ</h3>
         <hr />
        
 
-       
-            <label>what is the weather?: 
-                <select id="choose">
-                    <option value="hot">hot</option>
-                    <option value="rain">rain</option>
-                    <option value="snow">snow</option>
-                    </select>
+    
 
-                        <hr />
-        <button type="button" onclick="footwear()">footwear</button><br>
-        <hr />
-        <div id="output"></div>
+    <label>Enter one number: <input type="text" id="one">
+        <label>Enter an arithmetic operator (+,-,*,/): 
+            <select id="arithmetic">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">*</option>
+                <option value="-">/</option>
+                </select>
 
-        <p><span id="output"></span></p>
+            <label>Enter second number: <input type="text" id="two">
+                <label>Enter answer = <input type="text" id="answer">
+                    <hr />
+	<button type="button" onclick="quiz()">Check</button><br>
+    <hr />
+     
+	<div id="output"></div>
+
+    <p><span id="output"></span></p>
+
 </main>
     <footer>
         &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
       </footer>
 
+      <script>
+
+   
+        function all() {
+            //INPUT
+            <label> your quiz is: </label>
+             let a = parseFloat(document.getElementById('one').value);
+             let b = parseFloat(document.getElementById('two').value);
+             let c = parseFloat(document.getElementById('arithmetic').value);
+             let d = parseFloat(document.getElementById('answer').value);
+            
+            //OUTPUT
+             document.getElementById('output').innerHTML = + a  ;
+        }
+            </script>
+
+<hr />
+     
 	<script   src= "scripts3.js" >
 
 		
 	</script>
 
-
-<script   src= "js/scripts3.js" >
-
-
-		
-</script>
 
 </body>
 </html>
