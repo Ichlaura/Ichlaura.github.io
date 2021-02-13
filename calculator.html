@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>W06.09 Two Programs with if Statements</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<input type="text" id="first">
+	<input type="text" id="arithmetic">
+	<input type="text" id="second">
+	= <input type="text" id="answer">
+	<button type="button" onclick="check()">Check</button><br>
+	<div id="solution"></div>
+	<script>
+
+		function check()
+		{
+			var first = parseFloat(document.getElementById('first').value);
+			var second = parseFloat(document.getElementById('second').value);
+			var op = document.getElementById('arithmetic').value;
+			var answer = parseFloat(document.getElementById('answer').value);
+
+			var compute;
+			var message;
+			if(op == "+"){
+				compute = first + second;
+				if ( answer == compute){
+					message = "Correct! Good job!";
+				} else {
+					message = "Incorrect. Try again!";
+				}
+			}
+			else if (op == "-"){
+				compute = first - second;
+				if ( answer == compute){
+					message = "Correct! Good job!";
+				} else {
+					message = "Incorrect. Try again!";
+				}
+			}
+			else if (op == "*"){
+				compute = first * second;
+				if ( answer == compute){
+					message = "Correct! Good job!";
+				} else {
+					message = "Incorrect. Try again!";
+				}
+			}
+			else if (op == "/"){
+				compute = first / second;
+				if ( answer == compute){
+					message = "Correct! Good job!";
+				} else {
+					message = "Incorrect. Try again!";
+				}
+			}
+			else {
+				message = "wrong operator";
+			}
+			document.getElementById("solution").innerHTML = message;
+		}
+		
+	</script>
+
+
+</body>
+</html>
