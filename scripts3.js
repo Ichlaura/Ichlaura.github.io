@@ -1,6 +1,6 @@
 function footwear(){
 
-    let a = document.getElementById("choose").value
+    let a = document.getElementById("choose").value;
 
     let footwear;
 switch (a) {
