@@ -1,46 +1,46 @@
 function check()
 		{
-			var first = parseFloat(document.getElementById('first').value);
-			var second = parseFloat(document.getElementById('second').value);
+			var one = parseFloat(document.getElementById('one').value);
+			var two = parseFloat(document.getElementById('two').value);
 			var op = document.getElementById('arithmetic').value;
-			var answer = parseFloat(document.getElementById('answer').value);
+			var solution = parseFloat(document.getElementById('solution').value);
 
-			var compute;
+			var arithmetic;
 			var message;
 			if(op == "+"){
-				compute = first + second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
+				arithmetic = one + two;
+				if (solution == arithmetic){
+					message = "Correct! Great!";
 				} else {
 					message = "Incorrect. Try again!";
 				}
 			}
 			else if (op == "-"){
-				compute = first - second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
+				arithmetic= one- two;
+				if ( solution == arithmetic){
+					message = "Correct! Great!";
 				} else {
 					message = "Incorrect. Try again!";
 				}
 			}
 			else if (op == "*"){
-				compute = first * second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
+				arithmetic = one* two;
+				if ( solution== arithmetic){
+					message = "Correct! Great!";
 				} else {
 					message = "Incorrect. Try again!";
 				}
 			}
 			else if (op == "/"){
-				compute = first / second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
+				arithmetic = one / two;
+				if ( solution == arithmetic){
+					message = "Correct! Great!";
 				} else {
 					message = "Incorrect. Try again!";
 				}
 			}
 			else {
-				message = "wrong operator";
+				message = "Error";
 			}
 			document.getElementById("solution").innerHTML = message;
 		}
