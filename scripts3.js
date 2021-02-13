@@ -1,9 +1,9 @@
 function footwear(){
 
-    let weather = document.getElementById("weather").value
+    let a = document.getElementById("choose").value
 
     let footwear;
-switch (weather) {
+switch (a) {
 case hot:
 footwear= 'sandals';
 break;
@@ -18,5 +18,5 @@ footwear = 'shoes';
 break;
 }
 
-document.getElementById('output').innerHTML = 'Adequate footwear type is ' + footwear + '.';
+document.getElementById('output').innerHTML =  + footwear ;
 }
