@@ -1,23 +1,22 @@
 function footwear(){
 
-    let footwear
     let weather = document.getElementById("weather").value
 
     let footwear;
 switch (weather) {
 case hot:
-shoes = 'sandals';
+footwear= 'sandals';
 break;
 case rain:
-shoes = 'galoshes';
+footwear = 'galoshes';
 break;
 case snow:
-shoes = 'boots';
+footwear = 'boots';
 break;
 case unknown:
-shoes = 'shoes';
+footwear = 'shoes';
 break;
 }
-//Output: Display the message to the user
+
 document.getElementById('output').innerHTML = 'Adequate footwear type is ' + footwear + '.';
 }
