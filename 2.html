@@ -25,7 +25,7 @@
     <label>Enter x: <input type="text" id="one">
 
             <label>Enter y: <input type="text" id="two">
-                <label>Enter answer = <input type="text" id="answer">
+                
                     <hr />
 	<button type="button" onclick="quiz()">Check</button><br>
     <hr />
@@ -43,7 +43,10 @@
 
    
         function all() {
-            let x = 1, y = 7;
+
+            var x = document.getElementById("one").value;
+            var y = document.getElementById("two").value;
+            
 let message = "Welcome";
 if (x < 2) {
     if (y > 10) {
@@ -53,7 +56,7 @@ if (x < 2) {
         message = "Goodbye";
     }
 }
-document.getElementById('output').innerHTML = message;
+document.getElementById("output").innerHTML = message;
         }
             </script>
 
