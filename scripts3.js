@@ -1,6 +1,6 @@
 function footwear()
 		{
-			let a = parseFloat(document.getElementById('a').value);
+			let a = parseFloat(document.getElementById("a").value);
 			
 			
             if (a == "hot") {
