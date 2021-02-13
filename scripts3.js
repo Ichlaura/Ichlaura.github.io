@@ -1,33 +1,24 @@
-function footwear(){
+function footWear()
+		{
+			var answer = document.getElementById("choose").value;
+			var message;
+			
+			if (answer == 'hot' || answer =='Hot')
+			{
+				message = "sandals";
+			}
+			else if (answer == 'rain' || answer == 'Rain')
+			{
+				message = "galoshes";
+			}
+			else if ( answer == 'snow'|| answer == 'Snow')
+			{
+				message = "boots";
+			}		
+			else 
+			{
+				message = "shoes";
+			}
 
-    let a = document.getElementById("choose").value;
-
-    let footwear;
-switch (a) {
-case hot:
-footwear= 'sandals';
-break;
-case rain:
-footwear = 'galoshes';
-break;
-case snow:
-footwear = 'boots';
-break;
-case unknown:
-footwear = 'shoes';
-break;
-}
-
-
-let message;
-if (a == a) {
-message = footwear
-}
-else {
-message = 'try again'
-}
-
-
-document.getElementById('output').innerHTML = message;
-
-}
+			document.getElementById("output").innerHTML = message;
+		}
