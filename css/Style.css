@@ -24,10 +24,10 @@ h2, #currentdate {
 
 main {
 	margin: 10px auto;
-	border: 1px solid #999;
+	border: 1px solid rgb(189, 186, 186);
 	padding: 10px;
 	max-width: 500px;
-	background-color: #abe;
+	background-color: rgb(178, 238, 170);
 	box-shadow: 0 0 30px;
 }
 
