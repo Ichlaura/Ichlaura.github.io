@@ -15,31 +15,8 @@
 
 	<button type="button" onclick="footWear()">Foot Wear</button><br>
     Foot Wear: <div id="solution"></div>
-	<script>
-		function footWear()
-		{
-			var answer = document.getElementById("weather").value;
-			var message;
-			
-			if (answer == 'hot' || answer =='Hot')
-			{
-				message = "sandals";
-			}
-			else if (answer == 'rain' || answer == 'Rain')
-			{
-				message = "galoshes";
-			}
-			else if ( answer == 'snow'|| answer == 'Snow')
-			{
-				message = "boots";
-			}		
-			else 
-			{
-				message = "shoes";
-			}
-
-			document.getElementById("solution").innerHTML = message;
-		}
+	<script
+		src= "scripts3.js" >
 	</script>
 </body>
 </html>
