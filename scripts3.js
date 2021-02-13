@@ -18,5 +18,16 @@ footwear = 'shoes';
 break;
 }
 
-document.getElementById('output').innerHTML =  + footwear ;
+
+let message;
+if (a == a) {
+message = footwear
+}
+else {
+message = 'try again'
+}
+
+
+document.getElementById('output').innerHTML = message;
+
 }
