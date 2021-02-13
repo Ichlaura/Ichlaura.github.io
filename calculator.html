@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pounds to Kilograms</title>
+        <link href="/css/Styles.css" rel="Stylesheet" />
+        <link href="css/Style.css" rel="Stylesheet" />
+      </head>
 <head>
-	<title>W06.09 Two Programs with if Statements</title>
+	<title> W06 Quiz on basic arithmetic</title>
 	<meta charset="UTF-8">
 </head>
 <body>
@@ -11,54 +17,13 @@
 	= <input type="text" id="answer">
 	<button type="button" onclick="check()">Check</button><br>
 	<div id="solution"></div>
-	<script>
 
-		function check()
-		{
-			var first = parseFloat(document.getElementById('first').value);
-			var second = parseFloat(document.getElementById('second').value);
-			var op = document.getElementById('arithmetic').value;
-			var answer = parseFloat(document.getElementById('answer').value);
+    <footer>
+        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+      </footer>
 
-			var compute;
-			var message;
-			if(op == "+"){
-				compute = first + second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else if (op == "-"){
-				compute = first - second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else if (op == "*"){
-				compute = first * second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else if (op == "/"){
-				compute = first / second;
-				if ( answer == compute){
-					message = "Correct! Good job!";
-				} else {
-					message = "Incorrect. Try again!";
-				}
-			}
-			else {
-				message = "wrong operator";
-			}
-			document.getElementById("solution").innerHTML = message;
-		}
+	<script   src= "scripts2.js" >
+
 		
 	</script>
 
