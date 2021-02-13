@@ -3,7 +3,7 @@ function poundsToKilograms() {
     // Input
     let pounds = parseFloat(document.getElementById('pounds').value);
     
-    // Convert the pounds to kilograms.
+    // Convert the libras to kilograms.
     let kilograms = pounds * 0.453592;
     
     //Round 
