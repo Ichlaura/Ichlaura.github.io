@@ -33,16 +33,37 @@
 
             <label>Enter second number: <input type="text" id="two">
                 <label>Enter answer = <input type="text" id="answer">
+                    <hr />
 	<button type="button" onclick="quiz()">Check</button><br>
+    <hr />
+     
 	<div id="output"></div>
 
-
     <p><span id="output"></span></p>
+
 </main>
     <footer>
         &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
       </footer>
 
+      <script>
+
+   
+        function all() {
+            //INPUT
+            <label> your quiz is: </label>
+             let a = parseFloat(document.getElementById('one').value);
+             let b = parseFloat(document.getElementById('two').value);
+             let c = parseFloat(document.getElementById('arithmetic').value);
+             let d = parseFloat(document.getElementById('answer').value);
+            
+            //OUTPUT
+             document.getElementById('output').innerHTML = one + aritmetic + two + "=" + answer ;
+        }
+            </script>
+
+<hr />
+     
 	<script   src= "scripts2.js" >
 
 		
