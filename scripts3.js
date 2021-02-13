@@ -10,7 +10,10 @@ function footwear()
                 footwear = "Shoes";
             }
     
-
+            let hot = document.getElementById('hot').value;
+            let rain = document.getElementById('rain').value;
+            let snow = document.getElementById('snow').value;
+            let unknown = document.getElementById('unknown').value;
 
     
             let shoes;
