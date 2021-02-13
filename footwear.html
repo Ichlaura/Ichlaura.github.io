@@ -16,21 +16,20 @@
         <h2>Laura Nuñez</h2>
       </header>
       <main>
-        <h3>weather</h3>
+        <h3> Choose the weather</h3>
         <hr />
        
-
+             <select name="choice" id="weather">
+                <option value="hot">Hot</option>
+                <option value="rain" >Rain</option>
+                <option value="snow">Snow</option>
+                <option value = "unknown" selected>Unknown</option>
+                </select>
     
-
-    <label>Enter one number: <input type="text" id="one">
-        <label>Enter an arithmetic operator (+,-,*,/): <input type="text" id="arithmetic">
-            <label>Enter second number: <input type="text" id="two">
-                <label>Enter answer = <input type="text" id="answer">
-	<button type="button" onclick="quiz()">Check</button><br>
-	<div id="final"></div>
-
-
-    <p><span id="output"></span></p>
+                
+                <label><button onclick="footwear()">Footwear</button></label>
+                <hr>
+                <p><span id="output"></span></p>
 </main>
     <footer>
         &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
