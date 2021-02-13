@@ -1,37 +1,27 @@
-function quiz()
+function footwear()
 		{
-			let a = parseFloat(document.getElementById('one').value);
-			let b = parseFloat(document.getElementById('two').value);
-			let c = document.getElementById('arithmetic').value;
-			let answer = parseFloat(document.getElementById('answer').value);
-
+			let a = parseFloat(document.getElementById('a').value);
 			
-            let solution;
-            switch (c) {
-            case '+':
-            solution = a+ b;
+			
+            let b;
+            switch (weather) {
+            case (a==hot):
+            b = 'sandals';
             break;
-            case '-':
-            solution = a - b;
+            case (a== rain):
+            b = 'galoshes';
             break;
-            case '*':
-            solution= a * b;
+            case (a==snow):
+            b = 'boots';
             break;
-            case '/':
-            solution = a / b;
+            case (a==unknown):
+           b = 'shoes';
             break;
             }
             
+
             
-            let message;
-            if (answer == solution) {
-            message = 'Correct! 🏆 '
-            }
-            else {
-            message = 'Incorrect 😢'
-            }
-            
-            document.getElementById('output').innerHTML = message;
+            document.getElementById('output').innerHTML = b;
             
             }
           
