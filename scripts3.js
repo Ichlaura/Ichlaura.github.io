@@ -1,6 +1,6 @@
 function footWear()
 		{
-			var answer = document.getElementById("choose").value;
+			var answer = document.getElementById("weather").value;
 			var message;
 			
 			if (answer == 'hot' || answer =='Hot')
@@ -20,5 +20,5 @@ function footWear()
 				message = "shoes";
 			}
 
-			document.getElementById("output").innerHTML = message;
+			document.getElementById("solution").innerHTML = message;
 		}
