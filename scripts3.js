@@ -1,19 +1,16 @@
 function footwear()
 		{
-			let b = parseFloat(document.getElementById("a").value);
-			
-			
-            if (b == "hot") {
+            if (weather == "hot") {
                 footwear = "sandals";
-            } else if (b == "rain") {
+            } else if (weather == "rain") {
                 footwear = "galoshes";
-            } else if (b == "snow") { 
+            } else if (weather == "snow") { 
                 footwear = "Boots";
             } else {
-                footwear = "try again";
+                footwear = "Shoes";
             }
     
-            document.getElementById('output').innerHTML = footwear;
+            document.getElementById('output').innerHTML = footwear
         }
             
 
