@@ -1,4 +1,4 @@
-function check()
+function quiz()
 		{
 			var first = parseFloat(document.getElementById('first').value);
 			var second = parseFloat(document.getElementById('second').value);
