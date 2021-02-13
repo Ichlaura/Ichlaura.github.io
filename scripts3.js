@@ -10,10 +10,28 @@ function footwear()
                 footwear = "Shoes";
             }
     
-            document.getElementById('output').innerHTML = footwear
+
+
+    
+            let shoes;
+            switch (weather) {
+            case hot:
+            shoes = 'sandals';
+            break;
+            case rain:
+            shoes = 'galoshes';
+            break;
+            case snow:
+            shoes = 'boots';
+            break;
+            case unknown:
+            shoes = 'shoes';
+            break;
+
+            document.getElementById('output').innerHTML = shoes; 
         }
             
 
             
             
-            
+        
