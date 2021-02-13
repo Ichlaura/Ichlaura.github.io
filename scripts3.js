@@ -20,7 +20,7 @@ function footWear()
 				message = "shoes";
 			}
 
-			document.getElementById("solution").innerHTML = message;
+			document.getElementById("output").innerHTML = message;
 		} 
 
             
