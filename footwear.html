@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>weather</title>
+        <link href="/css/Styles.css" rel="Stylesheet" />
+        <link href="css/Style.css" rel="Stylesheet" />
+      </head>
 <head>
-<meta charset="utf-8" />
-<title>Week6 Assignment: Weather Shoes</title>
-<link href="css/style.css" rel="stylesheet" />
+	<title> W06 The day's weather</title>
+	<meta charset="UTF-8">
 </head>
-
 <body>
-<header>
-<h1>Week6 Assignment: Weather Shoes</h1>
-<h2>Yuki Nishigaki</h2>
-</header>
-<main>
-<h3>WEATHER SHOES</h3>
-<label>Choose the weather:</label>
+    <header>
+        <h1>Week 6: correct footwear</h1>
+        <h2>Laura Nuñez</h2>
+      </header>
+      <main>
+        <h3> Choose the weather</h3>
+        <hr />
+       
 
-<select id='weather'>
-<option value="">--Please choose an option--</option>
-<option value='hot'>HOT</option>
-<option value='rain'>RAIN</option>
-<option value='snow'>SNOW</option>
-<option value='unknown'>UNKNOWN</option>
-</select>
+       
+            <label>what is the weather?: 
+                <select id="choose">
+                    <option value="hot">hot</option>
+                    <option value="rain">rain</option>
+                    <option value="snow">snow</option>
+                    </select>
 
-<label><button onclick="footwear()">SELECT</button></label>
-<hr>
-<p><span id="output"></span></p>
+                        <hr />
+        <button type="button" onclick="footwear()">footwear</button><br>
+        <hr />
+        <div id="output"></div>
+
+        <p><span id="output"></span></p>
 </main>
-<footer>
-&copy;2021 &bull; Yuki Nishigaki &bull; BYU-Idaho &bull; CIT 160
-</footer>
-<script src="scripts3.js"></script>
-</body>
+    <footer>
+        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+      </footer>
 
+	<script   src= "scripts3.js" >
+
+		
+	</script>
+
+
+<script   src= "js/scripts3.js" >
+
+
+		
+</script>
+
+</body>
 </html>
