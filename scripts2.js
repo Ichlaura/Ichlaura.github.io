@@ -15,7 +15,7 @@ function quiz()
             solution = a - b;
             break;
             case '*':
-            solution= a * b;
+            solution = a * b;
             break;
             case '/':
             solution = a / b;
