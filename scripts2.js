@@ -14,11 +14,11 @@ function quiz()
             case '-':
             solution = a - b;
             break;
-            case '*':
+            case 'x':
             solution = a * b;
             break;
-            case '/':
-            solution = a / b;
+            case '%':
+            solution = a % b;
             break;
             }
             
