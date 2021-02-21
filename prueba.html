@@ -16,25 +16,7 @@
     </footer>
 
     <script>
-        function calculateDiscount() {
-        // Input - Get the input of city name and country name from the user
-        // city, country
-        let subtotal = parseFloat(document.querySelector('#subtotal').value);
         
-        var dayOfWeek = new Date().getDay();
-
-        let totalAmount;
-
-        //let discount = 0;
-        // Process 
-        if (subtotal > 50 && dayOfWeek == 2 || dayOfWeek == 3) {
-            totalAmount = subtotal - (subtotal * 0.1);
-        } else {
-            totalAmount = subtotal + (subtotal * 0.06);
-        }
-        // Output 
-        document.getElementById('output').innerHTML = 'Your total due is $'+totalAmount;
-    }
     </script>
 
 
