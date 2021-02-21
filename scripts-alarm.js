@@ -1,4 +1,4 @@
-function dayFinder()
+function alarm()
 {
     var now = new Date();
     var month = now.getMonth();
@@ -29,5 +29,5 @@ function dayFinder()
         }
     }
         
-    document.getElementById("solution").innerHTML = message;
+    document.getElementById("output").innerHTML = message;
 }
