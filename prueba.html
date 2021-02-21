@@ -1,39 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>W07.05 Two programs with Boolean logic</title>
-	<meta charset="UTF-8">
-</head>
 <body>
-	Enter Subtotal: <input type="text" id="subtotal">
-	<button type="button" onclick="total()">Total</button><br>
-    Total: <div id="solution"></div>
-	<script>
-		function total()
-		{
-			var dayOfWeek = new Date().getDay();
-			var subtotal = parseFloat(document.getElementById("subtotal").value);
-			var message;
-			var discout, tax;
-			
-			
-			if (subtotal >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)){
-				
-				discout = subtotal * 0.1;
-				tax = discout * 0.06;
-				total = (subtotal - discout + tax).toFixed(2);
-				message = total;
+    <header>
+        <h1>Week 7: Discount Program</h1>
+        <h2>Sanele Krakra</h2>
+    </header>
+    <main>
+        <h3>Tuesday or Wednesday Special</h3>
+        <label>Please enter subtotal <input type="text" id="subtotal"></label>
+      
+        <label><button onclick="calculateDiscount()">Total Cost</button></label>
+        <hr>
+        <p><span id="output">Your total due is $4.24</span></p>
+    </main>
+    <footer>
+        ©2021 • Sanele Krakra • BYU-Idaho • CIT 160
+    </footer>
 
-			}
-			else {
-			 
-			 	tax = subtotal * 0.06;
-			 	total = (subtotal + tax).toFixed(2);
-			 	message = total;
+    <script>
+        function calculateDiscount() {
+        // Input - Get the input of city name and country name from the user
+        // city, country
+        let subtotal = parseFloat(document.querySelector('#subtotal').value);
+        
+        var dayOfWeek = new Date().getDay();
 
-			}
-			document.getElementById("solution").innerHTML = message;
-		}
-	</script>
+        let totalAmount;
+
+        //let discount = 0;
+        // Process 
+        if (subtotal > 50 && dayOfWeek == 2 || dayOfWeek == 3) {
+            totalAmount = subtotal - (subtotal * 0.1);
+        } else {
+            totalAmount = subtotal + (subtotal * 0.06);
+        }
+        // Output 
+        document.getElementById('output').innerHTML = 'Your total due is $'+totalAmount;
+    }
+    </script>
+
+
 </body>
-</html>
