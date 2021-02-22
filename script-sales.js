@@ -21,5 +21,5 @@ function discount()
 			 	message = total;
 
 			}
-			document.getElementById("output").innerHTML = message;
+			document.getElementById("output").innerHTML = "$" + message;
 		}
