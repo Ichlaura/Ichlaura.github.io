@@ -1,33 +1,25 @@
-function alarm()
-{
-    var now = new Date();
-    var month = now.getMonth();
-    var dayOfMonth = now.getDate();
-    var dayOfWeek = now.getDay();
-    
-    var message;
+function discount()
+		{
+			var dayOfWeek = new Date().getDay();
+			var subtotal = parseFloat(document.getElementById("subtotal").value);
+			var message;
+			var discout, tax;
+			
+			
+			if (subtotal >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)){
+				
+				discout = subtotal * 0.1;
+				tax = discout * 0.06;
+				total = (subtotal - discout + tax).toFixed(2);
+				message = total;
 
-    if ( dayOfWeek != 0 || dayOfWeek != 6)
-    {
-        if( month == 0 && now == 1){
-            message = "Sleep in";
-        }
+			}
+			else {
+			 
+			 	tax = subtotal * 0.06;
+			 	total = (subtotal + tax).toFixed(2);
+			 	message = total;
 
-        else if ( month == 6 && now == 4)
-        {
-            message = "Sleep in";
-        }
-
-        else if ( month == 11 && now == 25)
-        {
-            message == "Sleep in";
-        }
-
-        else 
-        {
-            message = "Get up!";
-        }
-    }
-        
-    document.getElementById("output").innerHTML = message;
-}
+			}
+			document.getElementById("output").innerHTML = message;
+		}
