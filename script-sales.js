@@ -1,23 +1,23 @@
 function discount()
 		{
 			var dayOfWeek = new Date().getDay();
-			var a = parseFloat(document.getElementById("a").value);
+			var a = parseFloat(document.getElementById("a").value); //subtotal
 			var message;
-			var b, tax;
+			var b, salestax;
 			
 			
 			if (a >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)){
 				
 				b = a * 0.1;
-				tax = b * 0.06;
-				total = (a - b + tax).toFixed(2);
+				salestax = b * 0.06;
+				total = (a - b + salestax).toFixed(2);
 				message = total;
 
 			}
 			else {
 			 
 			 	tax = a *  0.06;
-			 	total = (a + tax).toFixed(2);
+			 	total = (a + salestax).toFixed(2);
 			 	message = total;
 
 			}
