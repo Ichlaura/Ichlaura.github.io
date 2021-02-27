@@ -16,7 +16,7 @@ function discount()
 			}
 			else {
 			 
-			 	tax = a *  0.06;
+			 	salestax = a *  0.06;
 			 	total = (a + salestax).toFixed(2);
 			 	message = total;
 
