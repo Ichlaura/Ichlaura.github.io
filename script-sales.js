@@ -1,23 +1,23 @@
 function discount()
 		{
 			var dayOfWeek = new Date().getDay();
-			var subtotal = parseFloat(document.getElementById("subtotal").value);
+			var a = parseFloat(document.getElementById("subtotal").value);
 			var message;
 			var discout, tax;
 			
 			
-			if (subtotal >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)){
+			if (a>= 50 && (dayOfWeek == 2 || dayOfWeek == 3)){
 				
-				discout = subtotal * 0.1;
+				discout = a * 0.1;
 				tax = discout * 0.06;
-				total = (subtotal - discout + tax).toFixed(2);
+				total = (a - discout + tax).toFixed(2);
 				message = total;
 
 			}
 			else {
 			 
-			 	tax = subtotal * 0.06;
-			 	total = (subtotal + tax).toFixed(2);
+			 	tax = a *  0.06;
+			 	total = (a + tax).toFixed(2);
 			 	message = total;
 
 			}
