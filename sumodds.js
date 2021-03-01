@@ -10,8 +10,7 @@ function sum() {
     for (var i = 0; i <= number; i++){
         
         if ((i % 2)!== 0){
-           // document.getElementById('output').value = i + "<br>";
-            total = total + "Number: " + i + "<br>";
+            total = total + "Number" + i + "<br>";
             sum +=  i;
         }
 
