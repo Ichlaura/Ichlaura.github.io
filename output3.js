@@ -7,6 +7,6 @@ let i=o;
 for ( i = 0; i < 4; i++) {
   output3 += i + " ";
 }
-document.getElementById('display3').textContent = output3;
+document.getElementById('output3').textContent = output3;
 
 }

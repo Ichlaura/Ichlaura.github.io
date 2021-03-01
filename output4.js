@@ -8,6 +8,6 @@ let n = 30;
 for (let s = 0; s < n; s++)
     interest = balance * rate;
     balance += interest;
-document.getElementById('display4').textContent = balance;
+document.getElementById('output4').textContent = balance;
 
 }

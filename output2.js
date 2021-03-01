@@ -11,7 +11,7 @@ for (let j = 0; j > 3; j++) {
     output2 += `Part 2:${j}`;
   }  
 }
-document.getElementById('display2').textContent = output2;
+document.getElementById('output2').textContent = output2;
 
 }
 
