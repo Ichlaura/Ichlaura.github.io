@@ -10,17 +10,17 @@ function sum() {
     for (var i = 0; i <= number; i++){
         
         if ((i % 2)!== 0){
-            total = total + "num: " + i + "<br>";
-            sum += i;
+            document.getElementById('output').value = i + "<br>";
+            total = total + "Number: " + i + "<br>";
+            sum +=  i;
         }
 
     }
-    
-    total = sum;	
+    	
 
 //salida
 
-    document.getElementById("output").innerHTML = total + "total number" + sum; 
+    document.getElementById("output").innerHTML = total + sum; 
 
 }
 
