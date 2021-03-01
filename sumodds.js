@@ -1,12 +1,16 @@
 function sum() {
 
+
+    //Valores iniciales
     var number = parseInt(document.getElementById("number").value);
     var sum = 0;
-    var total;
+    var total= "";
 
+//declaración  For
     for (var i = 0; i <= number; i++){
         
         if ((i % 2)!== 0){
+            total = total + "num: " + i + "<br>";
             sum += i;
         }
 
@@ -14,7 +18,32 @@ function sum() {
     
     total = sum;	
 
-    document.getElementById("output").innerHTML = total
+//salida
+
+    document.getElementById("output").innerHTML = total + "total number" + sum; 
 
 }
+
+
+
+
+//function oddNumbers() {
+   
+    //const number = document.querySelector('#number').value;
+    //let sum = 0;
+   // let outcome = '';
+  
+   // for (let i = 1; i <= number; i++) {
+      //  if(i%2 !== 0) {
+            //document.getElementById('output').value = i + "<br>";
+          //  outcome = outcome + "Number: " + i + '<br>';
+           // sum = sum + i;
+       // }
+  //  }
+
+// Output - city, country
+//document.getElementById('output').innerHTML = outcome + 'Total odd numbers:' + sum;
+    
+//}
+    
 
