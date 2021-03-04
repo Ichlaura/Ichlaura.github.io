@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Template-Laura</title>
+  <meta charset="UTF-8">
+  <link href="css/Style.css" rel="Stylesheet" />
+</head>
+<body>
+    <header>
+       
+        <h2>Laura Nuñez</h2>
+    </header>
+    <main>
+      
+        <label>Enter regular hours: <input type="text" id="n"></label>
+      <label>Enter extra hours: <input type="text" id="number2"></label>
+        <label><button onclick="sum10()">total</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+
+
+	function sum10() {
+    var sum = 0;
+    for (var i = 0;  i < 10;  i++) {
+        var n = parseFloat(prompt('Please enter a number'));
+        if (n == 0) {
+            break;
+        }
+        sum += n;
+    }
+    alert(sum);
+
+	 document.getElementById('output').innerHTML = + sum ;
+}
+    </script>
+</body>
+</html> 
