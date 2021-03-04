@@ -1,7 +1,5 @@
 function output2()
 {
-
-let   output2  = parseInt(document.getElementById("output2").value);  
 var output2;
 for (let j = 0; j > 3; j++) {
   if (j !== 2) {
