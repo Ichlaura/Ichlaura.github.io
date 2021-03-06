@@ -6,5 +6,5 @@ function countDown() {
         output += i + "<br>";
         i -= skip;
     }
-    document.getElementById('output2').innerHTML = output;
+    document.getElementById('output').innerHTML = output;
   }
