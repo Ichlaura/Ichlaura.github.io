@@ -5,7 +5,7 @@
     </header>
     <main>
         <h3>Probando Probando</h3>
-        <label>Please enter subtotal <input type="text" id="integer"></label>
+        <label>Please enter  <input type="text" id="integer"></label>
         <label><button onclick="prueba()">Intentar</button></label>
         <hr>
         <p><span id="output"></span></p>
@@ -15,16 +15,25 @@
     </footer>
 
     <script> 
-    function prueba() {
-    var output = "";
-    var skip = parseInt(document.getElementById('integer').value);
-    var i = 100;
-    while (i >= 0) {
-        output += i + "<br>";
-        i -= skip;
-    }
-    document.getElementById('output').innerHTML = output;
-  }
+ function prueba() {
+    var message = "I'm thinking of a number between 1 and 100" +
+        "Try to guess it!" +  "Please enter an integer between 1 and 100.";
+    var answer = 38;
+    var guess;
+    do {
+        guess = parseInt(prompt(message));
+        if (guess < answer) {
+            message = guess +
+            " is too low. Please enter another integer.";
+        }
+        else if (guess > answer) {
+            message = guess +
+            " is too high. Please enter another integer.";
+        }
+    } while (guess != answer);
+    message = guess + " is correct!";
+    alert(message);
+}
     </script>
 
 
