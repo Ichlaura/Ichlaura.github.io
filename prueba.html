@@ -6,6 +6,7 @@
     <main>
         <h3>Probando Probando</h3>
         <label>Please enter subtotal <input type="text" id="integer"></label>
+        <label><button onclick="prueba()">Intentar</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
@@ -13,7 +14,17 @@
         ©2021 • Laura • BYU-Idaho • CIT 160
     </footer>
 
-    <script> src="prueba.js">  
+    <script> 
+    function prueba() {
+    var output = "";
+    var skip = parseInt(document.getElementById('integer').value);
+    var i = 100;
+    while (i >= 0) {
+        output += i + "<br>";
+        i -= skip;
+    }
+    document.getElementById('output').innerHTML = output;
+  }
     </script>
 
 
