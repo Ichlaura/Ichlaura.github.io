@@ -3,8 +3,8 @@ body {
 }
 header,
 footer {
-	background-color: #000;
-	color: #fff;
+	background-color: rgb(24, 20, 20);
+	color: rgb(75, 168, 230);
 	padding: 10px;
 }
 
@@ -19,22 +19,22 @@ h2 {
 }
 
 h2, #currentdate {
-	color: rgb(102, 50, 76);
+	color: rgb(147, 226, 21);
 }
 
 main {
 	margin: 10px auto;
-	border: 1px solid rgb(189, 186, 186);
+	border: 1px solid rgb(189, 219, 20);
 	padding: 10px;
 	max-width: 500px;
-	background-color: rgb(194, 192, 194);
+	background-color: rgb(247, 242, 245);
 	box-shadow: 0 0 30px;
 }
 
 h3 {
 	font-size: 24px;
 	margin: 0 0 15px 0;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid rgb(25, 25, 29);
 	padding: 0;
 }
 
