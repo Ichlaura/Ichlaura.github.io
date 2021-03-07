@@ -4,7 +4,7 @@ function table()
             let end = document.getElementById("end").value;
             let divisor = document.getElementById("divisor").value;
 		  
-for ( (start >= 0 ); to (end); start++){
+for ( (start ); to (end); start++){
            go += start /divisor;
 
 } 
