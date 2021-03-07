@@ -4,18 +4,13 @@ function table()
             let end = document.getElementById("end").value;
             let divisor = document.getElementById("divisor").value;
 		  
-for ( (start ); to (end); start++){
-           go += start /divisor;
+while ((start < end)) {
+           start += start /divisor;
 
 } 
- 
-if (go=0) {
-    message= start;
-}
-else {
-    message="try again"
-}
+
+
  
         
-        document.getElementById("output").innerHTML = message;
+        document.getElementById("output").innerHTML = go;
         }
