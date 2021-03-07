@@ -12,5 +12,5 @@ while ((start < end)) {
 
  
         
-        document.getElementById("output").innerHTML = go;
+        document.getElementById("output").innerHTML = start;
         }
