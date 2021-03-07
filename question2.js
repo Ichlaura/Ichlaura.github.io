@@ -5,15 +5,14 @@ function table()
 			let message= "";
             let sum = one + two;
   
-			if((one >= 5  && two >= 5) || sum >= 20)
+			if((one > 5  && two > 5) || sum > 20)
 			{
                     message = true;
                 }
             
-			else  {
+			else  if ((one < 5  && two < 5) || sum != 20) {
                 message = false;
-            }
-			
+            } else {}
 
 			document.getElementById("output").innerHTML = message;
 		}
