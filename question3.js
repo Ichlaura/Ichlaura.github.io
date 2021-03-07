@@ -7,7 +7,7 @@ function table()
 for ( (start >= 0 ); to (end); start++){
            go += start /divisor;
 
-} }
+} 
  
 if (go=0) {
     message= start;
