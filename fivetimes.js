@@ -1,5 +1,5 @@
 
-function fivetimes()
+function tablas()
 		{
 			let answer = document.getElementById("tables").value;
 			let message= "";
