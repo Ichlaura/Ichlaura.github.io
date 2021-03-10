@@ -1,5 +1,5 @@
 
-function tabladel5()
+function tabla5()
 {
     let answer = document.getElementById("tables").value;
     let message= "";
