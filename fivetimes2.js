@@ -4,7 +4,7 @@ function tabla5()
     let answer = document.getElementById("tables").value;
     let message= "";
     
-     for (let i = 1; i<12;){
+     for (let i = 1; i<13;){
          message +=   `5x${1*i} =  ` + `${5*i}<br>`  ;
          i++;
      }
