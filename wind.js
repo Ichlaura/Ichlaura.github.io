@@ -8,14 +8,14 @@
     var temperature = parseFloat(document.getElementById('temperature').value);
     var wind = parseFloat(document.getElementById('windspeed').value);
     // Input: las variables del resultado (result)  son iguales a temperatura y wind.
-    var result = f(temperature, wind); // la función es llamada.
+    var result = f(temperature, wind); // la función f es llamada.
 
-    //// Display the resulting for the user to see -  Muestra el resultado para que lo vea el usuario.
-    document.getElementById('output').innerHTML = "Wind Chill: " + result.toFixed(2);
+    //// Output: Display the resulting for the user to see -  Muestra el resultado para que lo vea el usuario.
+    document.getElementById('output').innerHTML = "Wind Chill: " + result.toFixed(3);
 }
 
 
-//..........................segunda función .......................
+//..........................Segunda función .......................
 // Determina el valor con la ecuación.
 function f(t, s) {
   // Ecuación 
