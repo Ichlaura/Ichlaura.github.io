@@ -1,10 +1,13 @@
-function countDown() {
-  var output = "";
-  var skip = parseInt(document.getElementById('integer').value);
-  var i = 100;
-  while (i >= 0) {
-      output += i + "<br>";
-      i -= skip;
+function output2() {
+  var output2;
+for (let j = 0; j > 3; j++) {
+  if (j !== 2) {
+    output2 += `Part 2:${j}, `;
   }
-  document.getElementById('output2').innerHTML = output;
+  else {
+    output2 += `Part 2:${j}`;
+  }  
+}
+document.getElementById('output2').textContent = output2;
+
 }
