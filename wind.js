@@ -15,7 +15,7 @@
     var temp = parseFloat(document.getElementById('temperature').value);
     var wind = parseFloat(document.getElementById('windspeed').value);
     var result = windChill(temp, wind);
-    document.getElementById('outputDiv').innerHTML = "Wind Chill: " +
+    document.getElementById('output').innerHTML = "Wind Chill: " +
         result.toFixed(2);
 }
 
