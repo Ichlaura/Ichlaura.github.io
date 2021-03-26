@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Two MORE functions that use arrays</title>
+<script>
+
+/*
+ *
+ */
+
+
+function go() {
+    var list = [0, 1, 2, 3, 76, 78, 6, 7, 8, 9];
+    var multiplier = 10
+    // Comment out the function call that you don't want to run.
+
+    //var result = countEvens(list);
+    
+    var result = multiply(list, multiplier);
+    
+    document.getElementById('outputDiv').innerHTML = result;
+    }
+
+    function countEvens(list) {
+        /* Input: An array of any length containing numbers.
+         * Processing: Count how many numbers in the array are even.
+         * Output: The number of even numbers in the array.
+         */
+        var totalEvens = 0;
+        for (var i = 0; i < list.length; i++) {
+            if (list[i] % 2 == 0) {
+                totalEvens++;
+            }
+        }
+        return totalEvens;
+    }
+
+    function multiply(list, multiplier) {
+        /* Input: An array of any length containing numbers.
+         * Processing: Multiply each number in the array by multiplier.
+         * Output: An array of the same length as the input array, containing the numbers after multipication.
+         */
+        for (var i = 0; i < list.length; i++) {
+            list[i] *= multiplier;
+        }
+        return list;
+    }
+
+</script>
+</head>
+<body>
+    <button type="button" onclick="go()">Test</button>  
+    <div id="outputDiv"></div>
+</body>
+</html>
