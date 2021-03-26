@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Two functions that use arrays</title>
+<script>
+
+/*
+ *
+ */
+
+
+function go() {
+    var list = [0, 1, 2, 3, 76, 78, 6, 7, 8, 9];
+    //var result = addEnds(list);
+    var result = getMiddle(list);
+    document.getElementById('outputDiv').innerHTML = result;
+    }
+
+function addEnds(list) {
+    /* Input: An array of any size
+    * Processing: Find and add the two end values together
+    * Output: The sum of the two array ends
+    */
+    var firstIndex = 0; //Find first element, always 0
+    var lastIndex = list.length - 1; //Find last element.
+    var endSum = list[firstIndex] + list[lastIndex]; //Add first and last elements
+    return endSum
+    }
+    
+function getMiddle(list) {
+        /* Input: An array of any size
+        * Processing: find the middle element(s). If there are two middle elements, find the average.
+        * Output: The the middle element, or elements averaged.
+        */
+        
+        if (list.length % 2 == 0){ //If list length is even, find the two middle elements.
+            var elementOne = list.length / 2;
+            var elementTwo = list.length / 2 - 1;
+            var midAvg = (list[elementOne] + list[elementTwo]) / 2;
+            return midAvg;
+        } else { //If list is odd, return the middle element
+            var middleIndex = list.length / 2 - 0.5;
+            return list[middleIndex];
+        }
+    }
+    
+
+
+/*    var studID = document.getElementById('studID').value;
+    // Use linear search to find the student's ID.
+    var index = linearSearch(studentIDs, studID);
+    var name;
+    if (index == -1) {
+        // The student ID that the user entered
+        // is not stored in the studentIDs array.
+        name = 'No such student ID';
+    }
+    else {
+        // Get the student's name.
+        name = studentNames[index];
+    }
+    // Display the student's name for the user to see.
+    document.getElementById('output').innerHTML = name;
+*/
+</script>
+</head>
+<body>
+    <button type="button" onclick="go()">Test</button>  
+    <div id="outputDiv"></div>
+</body>
+</html>
