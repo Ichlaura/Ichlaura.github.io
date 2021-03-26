@@ -2,19 +2,29 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title>Investment Calculator</title>
+<title>Loan Calculator</title>
 
 
 </head>
 
-<body>                               
-Amount borrowed (principal) <input type="text" id="principal"> 
-Annual interest rate<input type="text" id="rate">  
-Number of years <input type="text" id="time">  
-Payments per year  <input type="text" id="periodPay">       
-<button type="button" onclick="Output1()">Compute payment</button>
-Number of payment paid to date
-<button type="button" onclick="Output2()">Compute pauoff amount</button>
+<body> 
+    <header>
+        <h1>Loan calculator</h1>
+      </header>        
+      <hr />                      
+Amount borrowed (principal) <input type="text" id="principal"> <br>
+<br>
+Annual interest rate <input type="text" id="rate">  <br>
+<br>
+Number of years <input type="text" id="time">  <br>
+<br>
+Payments per year  <input type="text" id="periodPay">    <br>   
+<br>
+<button type="button" onclick="Output1()">Compute payment</button><br>
+<br>
+Number of payment paid to date<br>
+<br>
+<button type="button" onclick="Output2()">Compute pauoff amount</button><br>
 <div id="output"></div>
 </body>    
 
