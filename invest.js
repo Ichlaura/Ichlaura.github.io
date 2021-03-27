@@ -11,10 +11,10 @@ function doFV() {
 function computeFutureValue(principal, annualRate, years, periodsPerYear) {
    var growthRatePerPeriod = annualRate / periodsPerYear;
    var periods = years * periodsPerYear;
-   var f = (principal * Math.pow(1 + growthRatePerPeriod, periods));
-   return f;
+   var result = (principal * Math.pow(1 + growthRatePerPeriod, periods));
+   return result;
 }
 function reset() {
    principal.innerHTML = "";
-
+//¿cómo lograr que mi programa borre las celdas con este botón? 
 }
