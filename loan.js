@@ -8,7 +8,7 @@ function doPayment() {
     var periodsPerYear = parseFloat(document.getElementById('periodsPerYearInputBox').value);
     var result = computePayment(principal, annualRate, years, periodsPerYear);
     result= result.toFixed(3);
-    document.getElementById('outputPayment').innerHTML = result ;
+    document.getElementById('outputPayment').innerHTML = "$" + result ;
 }
 
 //Función doBalance
@@ -21,7 +21,7 @@ function doBalance() {
     var numberOfPaymentsPaidToDate = parseFloat(document.getElementById('numberOfPaymentsPaidToDateInputBox').value);
     var result = computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate);
     result= result.toFixed(3);
-    document.getElementById('outputBalance').innerHTML = result ;
+    document.getElementById('outputBalance').innerHTML = "$" + result ;
 }
 
 //Función computePayment
@@ -33,12 +33,12 @@ function computePayment(principal, annualRate, years, periodsPerYear) {
     var denomenatorParenthesis = 1 + interestRatePerPeriod;
     var denomenator = 1 - Math.pow(denomenatorParenthesis, -periods);
     var p = numerator / denomenator;
-    return "$" + p;
+    return p;
 }
 
 //Función computeBalance
 function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate) {
-
-    var b = principal * Math.pow((1 + (annualRate / periodsPerYear)), numberOfPaymentPaidToDate) - (((principal * (annualRate / periodsPerYear)) / (1 - Math.pow((1 + (annualRate / periodsPerYear)), - (years * periodsPerYear))) * (Math.pow(1 + (annualRate / periodsPerYear), numberOfPaymentPaidToDate) - 1)) / (annualRate / periodsPerYear))
-    return "$" + b;
+    var b = principal * Math.pow((1 + (annualRate / periodsPerYear)), numberOfPaymentsPaidToDate) - (((principal * (annualRate / periodsPerYear)) / (1 - Math.pow((1 + (annualRate / periodsPerYear)), - (years * periodsPerYear))) * (Math.pow(1 + (annualRate / periodsPerYear), numberOfPaymentsPaidToDate) - 1)) / (annualRate / periodsPerYear));
+    return b;
 }
+   
