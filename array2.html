@@ -10,12 +10,12 @@
  */
 
 
-function compute() {
+function go() {
     var list = [0, 1, 2, 3, 76, 78, 6, 7, 8, 9];
     var multiplier = 10
     var result = multiply(list, multiplier);
     
-    document.getElementById('output').innerHTML = result;
+    document.getElementById('outputDiv').innerHTML = result;
     }
 
     function countEvens(list) {
@@ -43,17 +43,10 @@ function compute() {
         return list;
     }
 
-    function reset() {
-    list.splice(1,2,3,4,5,6,7,8,9);
-    
-    document.getElementById('output').innerHTML = result;
-    }
-
 </script>
 </head>
 <body>
-    <button type="button" onclick="compute()">Compute future value</button>  
-    <button type="button" onclick="reset()">Reset</button> 
-    <div id="output"></div>
+    <button type="button" onclick="go()">Test</button>  
+    <div id="outputDiv"></div>
 </body>
 </html>

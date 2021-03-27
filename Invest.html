@@ -3,39 +3,28 @@
 <head>
 <meta charset="utf-8">
 <title>Investment Calculator</title>
+<link href="css/Style.css" rel="Stylesheet" />
 
-<script>
-/* Input: Amount invested, annual interest rate, number of years, and periods per year.
- * Processing: Compute future value of the amount invester after the user defined number of years. 
- * Output: Future value of the in vestment.
- */
-function doFV() {
-    //get input from user and define variables.
-    var principal = parseFloat(document.getElementById('principalInputBox').value);
-    var annualRate = parseFloat(document.getElementById('annualRateInputBox').value);
-    var years = parseFloat(document.getElementById('yearsInputBox').value);
-    var periodsPerYear = parseFloat(document.getElementById('periodsPerYearInputBox').value);
-
-    // Determine the output and show it to the user.
-    var result = computeFutureValue(principal, annualRate, years, periodsPerYear);
-    document.getElementById('outputDiv').innerHTML = result ;
-}
-function computeFutureValue(principal, annualRate, years, periodsPerYear) {
-    var growthRatePerPeriod = annualRate / periodsPerYear;
-    var periods = years * periodsPerYear;
-    var f = principal * Math.pow(1 + growthRatePerPeriod, periods);
-    return f;
-}
+<script
+src= "invest.js" >
 </script>
 </head>
 
 <body>
-<h1>Investment Calculator</h1><br>
-Amount invested (principal) <input type="text" id="principalInputBox"><br>
-Annual rate (example: .08) <input type="text" id="annualRateInputBox"><br>
-Number of years <input type="text" id="yearsInputBox"><br>
-Periods per year <input type="text" id="periodsPerYearInputBox"><br>
-<button type="button" onclick="doFV()">Compute future value</button>  
-<div id="outputDiv"></div>  
+<h1>Investment Calculator</h1><br><br>
+<hr />
+Amount invested (principal) <input type="text" id="principal"><br><br>
+Annual rate (example: .08) <input type="text" id="annualRate"><br><br>
+Number of years <input type="text" id="years"><br><br>
+Periods per year <input type="text" id="periods"><br><br>
+<button type="button" onclick="doFV()">Compute future value</button><br><br>
+<button type="button" onclick="reset()">Reset</button><br><br>
+<div id="output"></div>  <br><br>
+
+<footer>
+    &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+  </footer>
+<hr />
+
 </body>
 </html>
