@@ -20,10 +20,7 @@
 // Determina el valor con la ecuación.
 function windChill(t, s) {
   // Ecuación 
- //var f = 35.74 + (0.6215*t) - 35.75 * (Math.pow(s, 0.16)) + ((0.4275 * t) * (Math.pow(s, 0.16)));
-    var t = t;
-    var s = s;
-    var f= 35.74 + 0.6215 * t - 35.75 * Math.pow(s,0.16) + 0.4275 * t * Math.pow(s,0.16);
+    var f = 35.74 + (0.6215*t) - 35.75 * (Math.pow(s, 0.16)) + ((0.4275 * t) * (Math.pow(s, 0.16)));
  return f; // la función retorna al valor f de la ecuación.
 
 }
