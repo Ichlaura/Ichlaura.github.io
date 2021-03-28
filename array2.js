@@ -27,18 +27,18 @@ function test() {
 }
 
     function countEvens(list) {
-        var totalEvens = 0;
+        var result = 0;
         for (var i = 0; i < list.length; i++) {
             if (list[i] % 2 == 0) {
-                totalEvens++;
+                result++;
             }
         }
-        return totalEvens;
+        return result;
     }
 
-    function multiply(list, multiplier) {
+    function multiply(list, mult) {
         for (var i = 0; i < list.length; i++) {
-            list[i] *= multiplier;
+            list[i] *= mult;
         }
         return list;
     }
