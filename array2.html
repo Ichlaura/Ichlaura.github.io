@@ -1,52 +1,26 @@
-<!DOCTYPE HTML>
 <html lang="en-us">
 <head>
-<meta charset="utf-8">
-<title>Two MORE functions that use arrays</title>
-<script>
-
-/* 
- *
- */
-
-
-function go() {
-    var list = [0, 1, 2, 3, 76, 78, 6, 7, 8, 9];
-    var multiplier = 10
-    var result = multiply(list, multiplier);
-    
-    document.getElementById('outputDiv').innerHTML = result;
-    }
-
-    function countEvens(list) {
-        /* Input: An array of any length containing numbers.
-         * Processing: Count how many numbers in the array are even.
-         * Output: The number of even numbers in the array.
-         */
-        var totalEvens = 0;
-        for (var i = 0; i < list.length; i++) {
-            if (list[i] % 2 == 0) {
-                totalEvens++;
-            }
-        }
-        return totalEvens;
-    }
-
-    function multiply(list, multiplier) {
-        /* Input: An array of any length containing numbers.
-         * Processing: Multiply each number in the array by multiplier.
-         * Output: An array of the same length as the input array, containing the numbers after multipication.
-         */
-        for (var i = 0; i < list.length; i++) {
-            list[i] *= multiplier;
-        }
-        return list;
-    }
-
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Nuñez</title>
+    <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-    <button type="button" onclick="go()">Test</button>  
-    <div id="outputDiv"></div>
+    <header>
+        <h1>Arrays-2</h1>
+        <h2>Laura Nuñez</h2>
+    </header>
+    <main>
+        <h3>Please click GO</h3>
+        <label><button type="button" onclick="go()">GO</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+        <script
+        src= "array2.js" >
+        </script>
+    </main>
+    <footer>
+        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+    </footer>
 </body>
 </html>
