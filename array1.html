@@ -1,72 +1,65 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
-<meta charset="utf-8">
-<title>Two functions that use arrays</title>
-<script>
-
-/*
- *
- */
-
-
-function go() {
-    var list = [0, 1, 2, 3, 76, 78, 6, 7, 8, 9];
-    //var result = addEnds(list);
-    var result = getMiddle(list);
-    document.getElementById('outputDiv').innerHTML = result;
-    }
-
-function addEnds(list) {
-    /* Input: An array of any size
-    * Processing: Find and add the two end values together
-    * Output: The sum of the two array ends
-    */
-    var firstIndex = 0; //Find first element, always 0
-    var lastIndex = list.length - 1; //Find last element.
-    var endSum = list[firstIndex] + list[lastIndex]; //Add first and last elements
-    return endSum
-    }
-    
-function getMiddle(list) {
-        /* Input: An array of any size
-        * Processing: find the middle element(s). If there are two middle elements, find the average.
-        * Output: The the middle element, or elements averaged.
-        */
-        
-        if (list.length % 2 == 0){ //If list length is even, find the two middle elements.
-            var elementOne = list.length / 2;
-            var elementTwo = list.length / 2 - 1;
-            var midAvg = (list[elementOne] + list[elementTwo]) / 2;
-            return midAvg;
-        } else { //If list is odd, return the middle element
-            var middleIndex = list.length / 2 - 0.5;
-            return list[middleIndex];
-        }
-    }
-    
-
-
-/*    var studID = document.getElementById('studID').value;
-    // Use linear search to find the student's ID.
-    var index = linearSearch(studentIDs, studID);
-    var name;
-    if (index == -1) {
-        // The student ID that the user entered
-        // is not stored in the studentIDs array.
-        name = 'No such student ID';
-    }
-    else {
-        // Get the student's name.
-        name = studentNames[index];
-    }
-    // Display the student's name for the user to see.
-    document.getElementById('output').innerHTML = name;
-*/
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Nuñez</title>
+    <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-    <button type="button" onclick="go()">Test</button>  
-    <div id="outputDiv"></div>
+    <header>
+        <h1>Week 12: Arrays for Days</h1>
+        <h2>Laura Nuñez</h2>
+    </header>
+    <main>
+        <h3>Click the Button</h3>
+        <label><button type="button" onclick="test()">Button</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+        <script>
+            /* Defining Table
+ * Input: no user input
+ * Processing: Test the addEnds and getMiddle functions by calling them.
+ * Output: The values returned from the addEnds and getMiddle functions.
+ */
+function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+    // Test the addEnds function by calling it two times.
+    let sum1 = addEnds(list1);
+    let sum2 = addEnds(list2);
+
+    // Test the getMiddle function by calling it two times.
+    let mid1 = getMiddle(list1);
+    let mid2 = getMiddle(list2);
+
+    // Build a string to display to the user.
+    let output =
+           "List 1 Sum Ends is " + sum1 + '<br>' +
+           "List 2 Sum Ends is " + sum2 + '<br>' +
+           "List 1 Median is " + mid1 + '<br>' +
+           "List 2 Median is " + mid2;
+
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+}
+
+function addEnds(list) {
+    return list[0] + list[list.length-1]
+}
+function getMiddle(list) {
+    if(list.length % 2 == 0) {
+        return (list[list.length / 2] + list[list.length / 2 - 1]) / 2;
+    }
+    else {
+        return list[Math.floor(list.length / 2)];
+    }
+}
+        </script>
+    </main>
+    <footer>
+        &copy;2021 &bull; Laura Nuñez &bull; BYU-Idaho &bull; CIT 160
+    </footer>
 </body>
 </html>

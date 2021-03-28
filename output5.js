@@ -1,13 +1,16 @@
 function output5()
 {
 
+    //document.write("En el siguiente ejemplo se puede observar la declaración while verdadera")
  //For this problem, just write a comment in your
  // submission of why this syntax is incorrect   
-let output1;
 let i = 0;
+let n = 0;
 while (i < 3); {
-    // valid statements (this is not the problem)
     i++;
+   n += n; // valid statements (this is not the problem)
 }
-document.getElementById('output5').innerHTML = output1;
+    document.getElementById('output5').textContent = n;
+
 }
+
