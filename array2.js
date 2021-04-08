@@ -1,5 +1,5 @@
 
-function test() {
+function array2() {
     let list1 = [17, 8, 9, 5, 20];
     let list2 = [12, 4, 8, 15, 17, 5, 20, 11];
 
